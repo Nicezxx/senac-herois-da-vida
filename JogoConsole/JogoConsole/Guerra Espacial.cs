@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JogoConsole
 {
-    internal class Guerra_Espacial
-    {
+    
+    
         class GuerraEspacial
         {
             static char[,] mapa;
-            static int altura = 10;
-            static int largura = 20;
-            static int playerx = 1;
-            static int playery = 1;
+            static int altura = 20;
+            static int largura = 50;
+            static int playerX = 25;
+            static int playerY = 15;
             static bool jogando = true;
 
-            static void Main()
+           public static void Main()
 
             {
 
@@ -28,7 +24,7 @@ namespace JogoConsole
 
 
             }
-            static void Jogar()
+           public static void Jogar()
             {
                 iniciarmapa();
 
@@ -55,7 +51,7 @@ namespace JogoConsole
                     {
                         if (x == 0 || x == largura - 1 || y == 0 || y == altura - 1)
                         {
-                            mapa[x, y] = '#'; // paredes
+                            mapa[x, y] = '/'; // paredes
                         }
                         else
                         {
@@ -64,7 +60,8 @@ namespace JogoConsole
                     }
                 }
 
-                mapa[playerx, playery] = '@'; // posição do jogador
+         
+                mapa[playerX, playerY] = '^'; // posição do jogador
             }
 
             static void DesenhandoMapa()
@@ -83,35 +80,38 @@ namespace JogoConsole
 
             static void AtualizarPosicao(ConsoleKey tecla)
             {
-                int x = playerx;
-                int y = playery;
+                int tempX = playerX;
+                int tempY = playerY;
 
                 switch (tecla)
                 {
-                    case ConsoleKey.W: // cima
-                        y--;
+                    case ConsoleKey.A: // esuqerda
+                        tempX--;
                         break;
                     case ConsoleKey.S: // baixo
-                        y++;
-                        break;
-                    case ConsoleKey.A: // esquerda
-                        x--;
+                        tempY++;
                         break;
                     case ConsoleKey.D: // direita
-                        x++;
+                        tempX++;
+                        break;
+                    case ConsoleKey.W: // cima-
+                        tempY--;
                         break;
 
                 }
 
-                if (mapa[x, y] != '#')
+                if (mapa[tempX, tempY] != '/')
                 {
-                    mapa[playerx, playery] = ' ';
-                    mapa[x, y] = '@';
-                    playerx = x;
-                    playery = y;
+                    mapa[playerX, playerY] = ' ';
+                    mapa[tempX, tempY] = '^';
+                    playerX = tempX;
+                    playerY = tempY;
 
                 }
             }
 
         }
-    
+    }
+
+
+

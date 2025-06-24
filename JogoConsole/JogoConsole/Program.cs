@@ -12,6 +12,34 @@ Se nao conseguir eliminar um inimigo e ele tocar na borda, O jogador perde 1 vid
 //int vida = 3;
 //double dano = 1;
 
+namespace GuerraEspacial
+{
+    class Aulas
+    {
+        public static void Mostrarvariavel()
+        {
+            int pontos;
+            int vida;
+
+            float velocidade = 22.5f;
+            double dano = 11.1;
+
+            string titulo = "Guerra Espacial";
+            Console.WriteLine(titulo);
+            char letra;
+
+            /* tipo boleanos */
+            bool playing = false;
+
+        }
+
+
+    }
+
+
+
+
+}
 
 /*
 / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / 
@@ -42,10 +70,10 @@ Se nao conseguir eliminar um inimigo e ele tocar na borda, O jogador perde 1 vid
 */
 
 
-Console.WriteLine("Guerra Espacial");
+//Console.WriteLine("Guerra Espacial");
 
 
 
-Console.WriteLine("/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / \r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                               X             X           X            X                            /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                 ^                                                 /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / \r\n");
+//Console.WriteLine("/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / \r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                               X             X           X            X                            /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                 ^                                                 /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/                                                                                                   /\r\n/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / \r\n");
 
 
